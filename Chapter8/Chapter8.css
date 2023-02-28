@@ -1,0 +1,45 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするため */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main{
+  width: 960px;
+  margin: 50px auto;
+}
+.lists{
+  padding: 20px;
+}
+.lists:nth-child(odd){
+  background-color: #eee;
+}
+
+.box{
+  margin-top: 50px;
+}
+.boxes{
+  width: 30%;
+  height: 200px;
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 40px;
+  background-color: #ffd700;
+}
+
+.boxes:first-child,
+.boxes:nth-child(5),
+.boxes:last-child{
+ background-color: #ff8c00; 
+}
+
+.boxes:nth-child(3n){
+  margin-right: 0;
+}
